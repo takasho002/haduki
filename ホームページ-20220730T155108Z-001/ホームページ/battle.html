@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>battle</title>
+  <link rel="stylesheet" href="css/kougubako.css">
+</head>
+<body>
+  <header>
+    <img src="gazo/home.png">
+  </header>
+  <h1>対戦結果報告所</h1>
+  <form action="#" method="POST">
+    <dl>
+      <dt><label for="username">名前</label></dt>
+      <dd><input id="username" type="text" name="username" required></dd>
+
+      <dt><label for="mydeck">使用デッキ</label></dt>
+      <dd>
+        <select id="mydeck" name="mydeck" required>
+          <option value="" selected>選択してください</option>
+          <option value="sannzasi">三神ザシアン</option>
+          <option value="kozuga">ズガドーン</option>
+          <option value="mugen">ムゲンダイナ</option>
+          <option value="sekitan">セキタンザン</option>
+        </select>
+      </dd>
+
+      <dt><label for="oppname">対戦相手</label></dt>
+      <dd><input id="oppname" type="text" name="oppname" required></dd>
+
+
+      <dt><label for="oppdeck">相手デッキ</label></dt>
+      <dd>
+        <select id="oppdeck" name="oppdeck" required>
+          <option value="" selected>選択してください</option>
+          <option value="sannzasi">三神ザシアン</option>
+          <option value="kozuga">ズガドーン</option>
+          <option value="mugen">ムゲンダイナ</option>
+          <option value="sekitan">セキタンザン</option>
+        </select>
+      </dd>
+
+      <dt>勝敗</dt>
+      <dd>
+        <label><input type="radio" name="win" value="win" checked>勝ち</label>
+        <label><input type="radio" name="lose" value="lose">負け</label>
+      </dd>
+    </dl>
+    <input type="submit" name="submit" value="送信">
+  </form>
+  
+</body>
+</html>
