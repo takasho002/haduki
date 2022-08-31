@@ -1,98 +1,104 @@
 var save;
 var rc = 0;
-var srcount = 0;//SRと輝くを被らせないため→SRが出たら＋１
+var umai = 0;
+var srcount = 0;
 
 function sr(){ 
   var min = 1;
-  var max = 36;
+  var max = 38;
   var a = Math.floor( Math.random() * (max + 1 - min) ) + min;
   if(a==1){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/1.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/1.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==2){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/2.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/2.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==3){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/3.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/3.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==4){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/4.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/4.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==5){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/5.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/5.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==6){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/6.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/6.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==7){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/7.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/7.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==8){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/8.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/8.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==9){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/9.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/9.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==10){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/10.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/10.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==11){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/11.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/11.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==12){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/12.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/12.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==13){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/13.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/13.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==14){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/14.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/14.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==15){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/15.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/15.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==16){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/16.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/16.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==17){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/17.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/17.jpeg">');
     rc++;
     srcount++;
   }
   else if(a==18){
-    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s3a/sr/18.jpg">');
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/18.jpeg">');
+    rc++;
+    srcount++;
+  }
+  else if(a==19){
+    document.getElementById('sr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/sr/19.jpeg">');
     rc++;
     srcount++;
   }
@@ -105,17 +111,17 @@ function vstar(){
   if(save==1){
     document.getElementById('vstar').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/vstar/1.jpeg">');
     document.getElementById('v').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/v/1.jpeg">');
-    rc++;rc++;
+    rc++;umai++;
   }
   else if(save==2){
     document.getElementById('vstar').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/vstar/2.jpeg">');
     document.getElementById('v').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/v/2.jpeg">');
-    rc++;rc++;
+    rc++;umai++;
   }
   else if(save==3){
     document.getElementById('vstar').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/vstar/3.jpeg">');
     document.getElementById('v').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/v/3.jpeg">');
-    rc++;rc++;
+    rc++;umai++;
   }
 }
 
@@ -153,12 +159,8 @@ function v(){
 }
 function k(){
   var min = 1;
-  var max = 3;
+  var max = 6;
   var a = Math.floor( Math.random() * (max + 1 - min) ) + min;
-
-  if(srcount==1){
-    a = a + 4;
-  }
 
   if(a==1){
     document.getElementById('k').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/k/1.jpeg">');
@@ -239,68 +241,94 @@ function r(){
     }
   }
 }
-function uc(){
-  let l=[1,1,1,1,1,1,1,1,1,1,1,1,1];
-  var num=[0,0,0];
-  for(var i=0;i<3;i++){
-    var min = 0;
-    var max = 12;
-    num[i] = Math.floor( Math.random() * (max + 1 - min) ) + min;
+function uc(){//4枚目の方
+  let l=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  var num = 15 - umai;
+  for(var i=0;i<num;i++){
+    var min = 1;
+    var max = 13;
+    l[i] = Math.floor( Math.random() * (max + 1 - min) ) + min;
     for(var j=0;j<i;j++){
-      while(num[j]==num[i]){
-        var min = 0;
-        var max = 12;
-        num[i] = Math.floor( Math.random() * (max + 1 - min) ) + min;
+      while(l[j]==l[i]){
+        var min = 1;
+        var max = 21;
+        l[i] = Math.floor( Math.random() * (max + 1 - min) ) + min;
       }
     }
-    l[num[i]] = 0;
   }
-  for(i=0;i<l[0];i++){
+  for(i=0;i<num;i++){
+    if(l[i]==1){
     document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/1.jpeg">');
+    }
+    else if(l[i]==2){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/2.jpeg">');
+    }
+    else if(l[i]==3){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/3.jpeg">');
+    }
+    else if(l[i]==4){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/4.jpeg">');
+    }
+    else if(l[i]==5){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/5.jpeg">');
+    }
+    else if(l[i]==6){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/6.jpeg">');
+    }
+    else if(l[i]==7){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/7.jpeg">');
+    }
+    else if(l[i]==8){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/8.jpeg">');
+    }
+    else if(l[i]==9){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/9.jpeg">');
+    }
+    else if(l[i]==10){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/10.jpeg">');
+    }
+    else if(l[i]==11){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/11.jpeg">');
+    }
+    else if(l[i]==12){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/12.jpeg">');
+    }
+    else if(l[i]==13){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/13.jpeg">');
+    }
+    else if(l[i]==14){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/14.jpeg">');
+    }
+    else if(l[i]==15){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/15.jpeg">');
+    }
+    else if(l[i]==16){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/16.jpeg">');
+    }
+    else if(l[i]==17){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/17.jpeg">');
+    }
+    else if(l[i]==18){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/18.jpeg">');
+    }
+    else if(l[i]==19){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/19.jpeg">');
+    }
+    else if(l[i]==20){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/20.jpeg">');
+    }
+    else if(l[i]==21){
+      document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/21.jpeg">');
+    }
   }
-  for(i=0;i<l[1];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/2.jpeg">');
-  }
-  for(i=0;i<l[2];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/3.jpeg">');
-  }
-  for(i=0;i<l[3];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/4.jpeg">');
-  }
-  for(i=0;i<l[4];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/5.jpeg">');
-  }
-  for(i=0;i<l[5];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/6.jpeg">');
-  }
-  for(i=0;i<l[6];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/7.jpeg">');
-  }
-  for(i=0;i<l[7];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/8.jpeg">');
-  }
-  for(i=0;i<l[8];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/9.jpeg">');
-  }
-  for(i=0;i<l[9];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/10.jpeg">');
-  }
-  for(i=0;i<l[10];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/11.jpeg">');
-  }
-  for(i=0;i<l[11];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/12.jpeg">');
-  }
-  for(i=0;i<l[12];i++){
-    document.getElementById('uc').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/u/13.jpeg">');
-  }
+ 
 }
 function c(){
-  let m = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  let m = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   var total = 0;
-  for(var i=0;i<20;i++){
+  for(var i=0;i<26;i++){
     var min = 1;
-    var max = 24;
+    var max = 15;
     var a = Math.floor( Math.random() * (max + 1 - min) ) + min;
     if(0<a && a<11){
       m[i]=1;
@@ -311,20 +339,23 @@ function c(){
       total++;total++;
     }
   }
-  while(total!=20){
-    if(total<20){
+  while(total!=25){
+    if(total<25){
       var min = 0;
-      var max = 19;
+      var max = 25;
       a = Math.floor( Math.random() * (max + 1 - min) ) + min;
       m[a]++;
       total++;
     }
-    else if(total>20){
+    else if(total>25){
       var min = 0;
-      var max = 19;
+      var max = 25;
       a = Math.floor( Math.random() * (max + 1 - min) ) + min;
-      m[a]--;
-      total--;
+      if(m[a]!=0){
+        m[a]--;
+        total--;
+      }
+      
     }
   }
   for(i=0;i<m[0];i++){
@@ -399,6 +430,12 @@ function c(){
   for(i=0;i<m[23];i++){
     document.getElementById('c').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/c/24.jpeg">');
   }
+  for(i=0;i<m[24];i++){
+    document.getElementById('c').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/c/25.jpeg">');
+  }
+  for(i=0;i<m[25];i++){
+    document.getElementById('c').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/c/26.jpeg">');
+  }
 }
 function tr(){
   
@@ -423,8 +460,52 @@ function tr(){
     document.getElementById('tr').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/tr/10.jpeg">');
 }
 function horo(){
+  let c = [0,0];
+  var chr = 1;
+  var mai = 0;//horoの枚数
+
+  if(srcount==0){
+    chr = 2;
+  }
+  mai = 10 - chr;
+
+  for(var i=0;i<chr;i++){
+    var min = 1;
+    var max = 6;
+    c[i] = Math.floor( Math.random() * (max + 1 - min) ) + min;
+    for(var j=0;j<i;j++){
+      while(c[j]==c[i]){
+        var min = 1;
+        var max = 46;
+        c[i] = Math.floor( Math.random() * (max + 1 - min) ) + min;
+      }
+    }
+  }
+  for(i=0;i<3;i++){
+    if(c[i]==1){
+      document.getElementById('horo').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/chr/1.jpeg">');
+    }
+    if(c[i]==2){
+      document.getElementById('horo').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/chr/2.jpeg">');
+    }
+    if(c[i]==3){
+      document.getElementById('horo').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/chr/3.jpeg">');
+    }
+    if(c[i]==4){
+      document.getElementById('horo').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/chr/4.jpeg">');
+    }
+    if(c[i]==5){
+      document.getElementById('horo').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/chr/5.jpeg">');
+    }
+    if(c[i]==6){
+      document.getElementById('horo').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/chr/6.jpeg">');
+    }
+
+
+  }
+
   let l=[0,0,0,0,0,0,0,0,0,0];
-  for(var i=0;i<10;i++){
+  for(var i=0;i<mai;i++){
     var min = 1;
     var max = 46;
     l[i] = Math.floor( Math.random() * (max + 1 - min) ) + min;
@@ -432,11 +513,11 @@ function horo(){
       while(l[j]==l[i]){
         var min = 1;
         var max = 46;
-        num[i] = Math.floor( Math.random() * (max + 1 - min) ) + min;
+        l[i] = Math.floor( Math.random() * (max + 1 - min) ) + min;
       }
     }
   }
-  for(i=0;i<9;i++){
+  for(i=0;i<mai;i++){
     if(l[i]==1){
       document.getElementById('horo').insertAdjacentHTML('beforeEnd', '<img class="card" src="s11a/horo/1.jpeg">');
     }
@@ -583,13 +664,14 @@ function horo(){
 
 function sirudo(){
   
+  sr();
   vstar();
   v();
   k();
   r();
   uc();
   c();
-  tr();
+  
   horo();
 }
 
